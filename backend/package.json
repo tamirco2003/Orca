@@ -1,0 +1,33 @@
+{
+  "name": "orca",
+  "version": "1.0.0",
+  "description": "A simple chat app made with Node, Express, Socket.io, Redis, and React.",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd ../frontend && npm start",
+    "server": "nodemon index.js",
+    "start": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "keywords": [
+    "chat",
+    "react",
+    "socket",
+    "express",
+    "redis"
+  ],
+  "author": "Ghost20000",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.1",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0"
+  }
+}
